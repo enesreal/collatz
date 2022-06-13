@@ -1,0 +1,19 @@
+a=0
+while True:
+    global n
+    n=int(input("enter >>?"))
+    def th(n):
+        if n==1:
+            return 1
+
+        if n%2==0:#even
+            print(n,f'/2')#presenting the outcome of 'n' and what makes the current value of n
+            n=n/2#to set new value for the outcome of n divided by 2
+            return th(n)#/2 
+        else:#odd
+            print(n,f'*3+1')#presenting the outcome of 'n' and what makes the current value of n
+            n=n*3+1#to set new value for the outcome of n *3+1
+            return th(n)#*3+1  
+    th(n)
+    print("1.0  -->end the loop")
+    print(f'Number that you entered-->>{n}<<--')
